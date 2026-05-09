@@ -52,3 +52,82 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('touchend', stopDrag);
     });
 });
+
+// Konami code Easter egg
+let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+let konamiIndex = 0;
+
+document.addEventListener('keydown', (e) => {
+    if (e.code === konamiCode[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiCode.length) {
+            activateEasterEgg();
+            konamiIndex = 0; // reset after activation
+        }
+    } else {
+        konamiIndex = 0;
+    }
+});
+
+function activateEasterEgg() {
+    // Create confetti effect
+    const confettiContainer = document.createElement('div');
+    confettiContainer.style.position = 'fixed';
+    confettiContainer.style.top = '0';
+    confettiContainer.style.left = '0';
+    confettiContainer.style.width = '100%';
+    confettiContainer.style.height = '100%';
+    confettiContainer.style.pointerEvents = 'none';
+    confettiContainer.style.zIndex = '9999';
+    confettiContainer.style.overflow = 'hidden';
+    document.body.appendChild(confettiContainer);
+
+    // Create confetti pieces
+    for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        confetti.style.position = 'absolute';
+        confetti.style.width = '10px';
+        confetti.style.height = '10px';
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 80%, 50%)`;
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.top = `-10%`;
+        confetti.style.borderRadius = '50%';
+        confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+        confettiContainer.appendChild(confetti);
+    }
+
+    // Add a fun message
+    const message = document.createElement('div');
+    message.style.position = 'fixed';
+    message.style.top = '50%';
+    message.style.left = '50%';
+    message.style.transform = 'translate(-50%, -50%)';
+    message.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    message.style.color = '#fff';
+    message.style.padding = '20px 40px';
+    message.style.borderRadius = '10px';
+    message.style.fontSize = '24px';
+    message.style.fontFamily = 'Arial, sans-serif';
+    message.style.textAlign = 'center';
+    message.style.zIndex = '10000';
+    message.innerHTML = '🎉 ¡Easter egg activado! 🎉<br>Eres un verdadero fan del detailing!';
+    document.body.appendChild(message);
+
+    // Remove after 5 seconds
+    setTimeout(() => {
+        confettiContainer.remove();
+        message.remove();
+    }, 5000);
+}
+
+// Add CSS for confetti animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fall {
+        to {
+            transform: translateY(105vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);

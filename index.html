@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vengo Detailing - Detailing a domicilio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">Vengo Detailing</div>
+            <div class="logo">
+                <span class="logo-main">VENGO</span>
+                <span class="logo-sub">DETAILING</span>
+            </div>
             <button class="nav-toggle" aria-label="Abrir menú">
-                <span class="hamburger"></span>
+                <span></span><span></span><span></span>
             </button>
             <nav class="nav">
                 <ul>
                     <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#how">Cómo funciona</a></li>
+                    <li><a href="#how">Proceso</a></li>
                     <li><a href="#services">Servicios</a></li>
-                    <li><a href="#why">Por qué elegirnos</a></li>
+                    <li><a href="#why">Nosotros</a></li>
                     <li><a href="#zone">Zona</a></li>
-                    <li><a href="#reserve">Reservar</a></li>
                     <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#reserve" class="nav-cta">Reservar</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,35 +35,65 @@
 
     <!-- Hero -->
     <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-noise"></div>
         <div class="container">
-            <h1>Tu coche impecable sin moverte.</h1>
-            <p class="subtitle">Servicio de detailing a domicilio en Granollers. Vamos donde esté tu coche y lo dejamos como nuevo mientras tú sigues con tu día.</p>
-            <div class="hero-buttons">
-                <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank">Reservar ahora</a>
-                <a href="#services" class="btn btn-secondary">Ver servicios</a>
+            <div class="hero-content">
+                <p class="hero-eyebrow">Detailing Premium · Granollers</p>
+                <h1>Tu coche<br><em>impecable</em><br>sin moverte.</h1>
+                <p class="subtitle">Vamos donde esté tu coche y lo dejamos como nuevo mientras tú sigues con tu día.</p>
+                <div class="hero-buttons">
+                    <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank">
+                        <span>Reservar ahora</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#services" class="btn btn-ghost">Ver servicios</a>
+                </div>
             </div>
+            <div class="hero-badge">
+                <div class="badge-ring">
+                    <svg viewBox="0 0 120 120" class="badge-circle-text">
+                        <path id="circle" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+                        <text><textPath href="#circle" startOffset="0%">DETAILING · A DOMICILIO · GRANOLLERS · PREMIUM ·</textPath></text>
+                    </svg>
+                    <div class="badge-center">✦</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- Cómo funciona -->
     <section id="how" class="how">
         <div class="container">
-            <h2>Cómo funciona</h2>
+            <div class="section-label">El proceso</div>
+            <h2>Tres pasos.<br>Sin complicaciones.</h2>
             <div class="steps">
                 <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Reserva online</h3>
-                    <p>Elige tu servicio, fecha y ubicación en pocos clics.</p>
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Reserva online</h3>
+                        <p>Elige tu servicio, fecha y ubicación en pocos clics desde cualquier dispositivo.</p>
+                    </div>
                 </div>
+                <div class="step-divider">→</div>
                 <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Vamos a la ubicación del coche</h3>
-                    <p>Nuestro equipo llega donde esté tu coche: parking, garaje, casa o oficina.</p>
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Llegamos a ti</h3>
+                        <p>Nuestro equipo acude al parking, garaje, casa u oficina que indiques.</p>
+                    </div>
                 </div>
+                <div class="step-divider">→</div>
                 <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Disfruta tu coche impecable</h3>
-                    <p>Mientras tú sigues con tu día, nosotros dejamos tu vehículo como nuevo.</p>
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Resultado impecable</h3>
+                        <p>Mientras sigues con tu día, tu vehículo queda como recién salido del concesionario.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,150 +102,213 @@
     <!-- Servicios -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Nuestros servicios</h2>
+            <div class="section-label">Servicios</div>
+            <h2>Elige tu nivel<br>de cuidado.</h2>
             <div class="cards">
                 <div class="card">
-                    <h3>Limpieza interior</h3>
+                    <div class="card-tag">Interior</div>
+                    <h3>Limpieza<br>Interior</h3>
                     <p>Limpieza profunda de tapicería, alfombras, tablero y cristales interiores.</p>
-                    <p class="price">Desde 60€</p>
+                    <div class="card-footer">
+                        <span class="price">Desde <strong>60€</strong></span>
+                        <a href="https://calendly.com/vengo-detailing" class="card-btn" target="_blank">Reservar →</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Limpieza exterior</h3>
+                <div class="card card-featured">
+                    <div class="card-tag">Exterior</div>
+                    <h3>Limpieza<br>Exterior</h3>
                     <p>Lavado, descontaminación, pulido y protección de pintura y llantas.</p>
-                    <p class="price">Desde 80€</p>
+                    <div class="card-footer">
+                        <span class="price">Desde <strong>80€</strong></span>
+                        <a href="https://calendly.com/vengo-detailing" class="card-btn" target="_blank">Reservar →</a>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>Detailing completo</h3>
-                    <p>Servicio premium: interior + exterior + protección avanzada.</p>
-                    <p class="price">Desde 150€</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section id="why" class="why">
-        <div class="container">
-            <h2>Por qué elegir Vengo Detailing</h2>
-            <div class="features">
-                <div class="feature">
-                    <h3>No pierdes tiempo</h3>
-                    <p>Nos desplazamos a ti mientras sigues con tu día.</p>
-                </div>
-                <div class="feature">
-                    <h3>Servicio a domicilio</h3>
-                    <p>Parking, garaje, casa, oficina o donde tú indiques.</p>
-                </div>
-                <div class="feature">
-                    <h3>Acabado premium</h3>
-                    <p>Productos y técnicas de alto nivel para un resultado impecable.</p>
-                </div>
-                <div class="feature">
-                    <h3>Atención al detalle</h3>
-                    <p>Cada rincón cuenta. Nos enfocamos en la perfección.</p>
-                </div>
-                <div class="feature">
-                    <h3>Ideal para gente ocupada</h3>
-                    <p>Perfecto para profesionales, familias y quien valora su tiempo.</p>
-                </div>
-                <div class="feature">
-                    <h3>Reserva fácil online</h3>
-                    <p>Selecciona servicio, fecha y hora en minutos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Zona de servicio -->
-    <section id="zone" class="zone">
-        <div class="container">
-            <h2>Zona de servicio</h2>
-            <p>Actualmente en Granollers y alrededores.</p>
-            <p>Próximamente en más zonas.</p>
-        </div>
-    </section>
-
-    <!-- Reservar -->
-    <section id="reserve" class="reserve">
-        <div class="container">
-            <h2>Reserva tu cita</h2>
-            <p>Selecciona tu servicio y horario disponible:</p>
-            <!-- Calendly link -->
-            <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank">Reservar cita</a>
-            <p class="whatsapp-alt">¿Tienes dudas? Escríbenos por WhatsApp.</p>
-        </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section id="testimonios" class="testimonios">
-        <div class="container">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <p>"Servicio increíble. Mi coche nunca había estado así de limpio y sin moverme de casa."</p>
-                    <p class="author">- María L., Granollers</p>
-                </div>
-                <div class="testimonial">
-                    <p>"Profesionales, puntuales y el resultado superó mis expectativas. Volveré a contratar."</p>
-                    <p class="author">- Jorge S., Les Franqueses</p>
-                </div>
-                <div class="testimonial">
-                    <p>"La comodidad de que vengano a mi oficina es insuperable. Coche como nuevo."</p>
-                    <p class="author">- Ana P., Canovelles</p>
+                    <div class="card-tag">Premium ✦</div>
+                    <h3>Detailing<br>Completo</h3>
+                    <p>Servicio premium: interior + exterior + protección avanzada de máximo nivel.</p>
+                    <div class="card-footer">
+                        <span class="price">Desde <strong>150€</strong></span>
+                        <a href="https://calendly.com/vengo-detailing" class="card-btn" target="_blank">Reservar →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Antes / Después -->
-<section id="before-after" class="before-after">
-    <div class="container">
-        <h2>Transformación: Antes y Después</h2>
-        <div class="slider-container">
-            <div class="slider">
-                <img class="before-img" src="https://via.placeholder.com/800x500/2c3e50/ffffff?text=ANTES+%28sucio%29" alt="Antes">
-                <img class="after-img" src="https://via.placeholder.com/800x500/27ae60/ffffff?text=DESPU%C3%91ES+%28limpio%29" alt="Después">
-                <div class="slider-handle">
-                    <div class="handle"></div>
+    <section id="before-after" class="before-after">
+        <div class="container">
+            <div class="section-label">Resultados</div>
+            <h2>La diferencia<br>habla por sí sola.</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <img class="before-img" src="https://via.placeholder.com/900x520/1a1a1a/444444?text=ANTES" alt="Antes">
+                    <img class="after-img" src="https://via.placeholder.com/900x520/c8a96e/1a1a1a?text=DESPUÉS" alt="Después">
+                    <div class="slider-handle">
+                        <div class="handle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M6 10l-4 0M6 7l-3 3 3 3M14 10l4 0M14 7l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-overlay">
+                    <span class="label before-label">ANTES</span>
+                    <span class="label after-label">DESPUÉS</span>
                 </div>
             </div>
-            <div class="slider-overlay">
-                <span class="label before-label">ANTES</span>
-                <span class="label after-label">DESPUÉS</span>
+            <p class="note">Arrastra para ver la transformación</p>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section id="why" class="why">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-left">
+                    <div class="section-label">Por qué nosotros</div>
+                    <h2>Perfección<br>en cada<br>detalle.</h2>
+                    <a href="#reserve" class="btn btn-primary">
+                        <span>Reservar ahora</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <div class="why-right">
+                    <div class="feature">
+                        <span class="feature-icon">◈</span>
+                        <div>
+                            <h3>Sin perder tiempo</h3>
+                            <p>Nos desplazamos a ti mientras sigues con tu día.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◈</span>
+                        <div>
+                            <h3>Donde tú estés</h3>
+                            <p>Parking, garaje, casa, oficina o donde tú indiques.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◈</span>
+                        <div>
+                            <h3>Acabado premium</h3>
+                            <p>Productos y técnicas de alto nivel para un resultado impecable.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◈</span>
+                        <div>
+                            <h3>Atención al detalle</h3>
+                            <p>Cada rincón cuenta. Nos enfocamos en la perfección.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◈</span>
+                        <div>
+                            <h3>Ideal para ocupados</h3>
+                            <p>Perfecto para profesionales, familias y quien valora su tiempo.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◈</span>
+                        <div>
+                            <h3>Reserva en minutos</h3>
+                            <p>Selecciona servicio, fecha y hora desde el móvil.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <p class="note">Arrastra la barra para ver la transformación completa.</p>
-    </div>
-</section>
-<!-- Footer -->
+    </section>
+
+    <!-- Zona -->
+    <section id="zone" class="zone">
+        <div class="container">
+            <div class="zone-inner">
+                <div class="section-label">Cobertura</div>
+                <h2>Granollers<br>y alrededores.</h2>
+                <p>Cubrimos toda la zona de Granollers: Les Franqueses, Canovelles, La Roca del Vallès y más. Próximamente en nuevas zonas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <div class="section-label">Testimonios</div>
+            <h2>Lo que dicen<br>nuestros clientes.</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="stars">✦ ✦ ✦ ✦ ✦</div>
+                    <p>"Servicio increíble. Mi coche nunca había estado así de limpio y sin moverme de casa."</p>
+                    <p class="author">María L. <span>— Granollers</span></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">✦ ✦ ✦ ✦ ✦</div>
+                    <p>"Profesionales, puntuales y el resultado superó mis expectativas. Volveré a contratar."</p>
+                    <p class="author">Jorge S. <span>— Les Franqueses</span></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">✦ ✦ ✦ ✦ ✦</div>
+                    <p>"La comodidad de que vengan a mi oficina es insuperable. Coche como nuevo."</p>
+                    <p class="author">Ana P. <span>— Canovelles</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservar -->
+    <section id="reserve" class="reserve">
+        <div class="container">
+            <div class="reserve-inner">
+                <p class="reserve-eyebrow">¿Listo?</p>
+                <h2>Reserva tu cita<br>ahora mismo.</h2>
+                <p>Sin esperas. Sin desplazamientos. Solo dinos dónde está tu coche.</p>
+                <div class="reserve-actions">
+                    <a href="https://calendly.com/vengo-detailing" class="btn btn-primary btn-large" target="_blank">
+                        <span>Reservar cita</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://wa.me/34600000000" class="btn btn-ghost" target="_blank">WhatsApp →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-cols">
-                <div class="footer-col">
-                    <h3>Vengo Detailing</h3>
-                    <p>Detailing a domicilio premium</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-main">VENGO</span>
+                        <span class="logo-sub">DETAILING</span>
+                    </div>
+                    <p>Detailing premium a domicilio.<br>Granollers y alrededores.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#services">Limpieza interior</a></li>
-                        <li><a href="#services">Limpieza exterior</a></li>
-                        <li><a href="#services">Detailing completo</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Zona</h4>
-                    <p>Granollers y alrededores</p>
-                    <p>Próximamente: más zonas</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <p>WhatsApp: <a href="https://wa.me/34600000000">+34 600 000 000</a></p>
-                    <p>Instagram: <a href="https://instagram.com/vengodetailing">@vengodetailing</a></p>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#services">Limpieza interior</a></li>
+                            <li><a href="#services">Limpieza exterior</a></li>
+                            <li><a href="#services">Detailing completo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="https://wa.me/34600000000">WhatsApp</a></li>
+                            <li><a href="https://instagram.com/vengodetailing">Instagram</a></li>
+                            <li><a href="https://calendly.com/vengo-detailing">Reservas</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Vengo Detailing. Todos los derechos reservados.</p>
+                <p>© 2026 Vengo Detailing. Todos los derechos reservados.</p>
+                <p>Granollers, Vallès Oriental</p>
             </div>
         </div>
     </footer>

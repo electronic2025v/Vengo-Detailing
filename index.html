@@ -1,397 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vengo Detailing | Detailing a domicilio en Granollers</title>
-    <meta name="description" content="Detailing a domicilio en Granollers y alrededores. Reserva online, dinos dónde está tu coche y nosotros lo dejamos impecable sin que pierdas tiempo.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vengo Detailing | Detailing a domicilio en Granollers</title>
+  <meta name="description" content="Detailing a domicilio en Granollers y alrededores. Reserva online, dinos dónde está tu coche y nosotros lo dejamos impecable sin que pierdas tiempo." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Vengo Detailing inicio">
+        <span class="brand-mark">V</span>
+        <span class="brand-text"><strong>Vengo</strong><small>Detailing</small></span>
+      </a>
 
-    <header class="site-header" data-header>
-        <div class="container header-inner">
-            <a href="#hero" class="brand" aria-label="Vengo Detailing inicio">
-                <span class="brand-mark">V</span>
-                <span class="brand-text">
-                    <strong>Vengo</strong>
-                    <small>Detailing</small>
-                </span>
-            </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
 
-            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#how">Cómo funciona</a>
+        <a href="#services">Servicios</a>
+        <a href="#benefits">Beneficios</a>
+        <a href="#before-after">Antes/después</a>
+        <a href="#trust">Confianza</a>
+        <a class="nav-cta" href="https://calendly.com/vengo-detailing" target="_blank" rel="noopener">Reservar</a>
+      </nav>
+    </div>
+  </header>
 
-            <nav class="site-nav" id="site-nav">
-                <a href="#how">Cómo funciona</a>
-                <a href="#services">Servicios</a>
-                <a href="#benefits">Beneficios</a>
-                <a href="#before-after">Antes/después</a>
-                <a href="#trust">Confianza</a>
-                <a class="nav-cta" href="https://calendly.com/vengo-detailing" target="_blank" rel="noopener">Reservar</a>
-            </nav>
-        </div>
-    </header>
+  <main>
+    <section class="hero section-dark" id="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
 
-    <main id="main">
-        <!-- HERO -->
-        <section class="hero section-dark" id="hero">
-            <div class="hero-glow hero-glow-one"></div>
-            <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal>
+          <p class="eyebrow">Detailing a domicilio · Granollers y alrededores</p>
+          <h1>Tu coche limpio sin moverte de casa.</h1>
+          <p class="hero-subtitle">Reservas online, eliges ubicación y nosotros nos encargamos. Limpieza interior, exterior o completa, donde tengas el coche: parking, garaje, casa o exterior.</p>
 
-            <div class="container hero-grid">
-                <div class="hero-content" data-reveal>
-                    <p class="eyebrow">Detailing a domicilio · Granollers y alrededores</p>
+          <div class="hero-actions">
+            <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank" rel="noopener">Reservar limpieza</a>
+            <a href="https://wa.me/34600000000" class="btn btn-secondary" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+          </div>
 
-                    <h1>Tu coche limpio sin moverte de casa.</h1>
-
-                    <p class="hero-subtitle">
-                        Reservas online, eliges ubicación y nosotros nos encargamos.
-                        Limpieza interior, exterior o completa, donde tengas el coche:
-                        parking, garaje, casa o exterior.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank" rel="noopener">
-                            Reservar limpieza
-                        </a>
-                        <a href="https://wa.me/34636825612" class="btn btn-secondary" target="_blank" rel="noopener">
-                            Preguntar por WhatsApp
-                        </a>
-                    </div>
-
-                    <div class="hero-proof">
-                        <div>
-                            <strong>Sin desplazarte</strong>
-                            <span>Vamos donde esté el coche</span>
-                        </div>
-                        <div>
-                            <strong>Reserva rápida</strong>
-                            <span>Elige día, hora y servicio</span>
-                        </div>
-                        <div>
-                            <strong>Resultado cuidado</strong>
-                            <span>Acabado limpio y profesional</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-visual" data-reveal>
-                    <div class="hero-card">
-                        <!-- CAMBIA ESTA IMAGEN por una foto real del coche limpio -->
-                        <img src="https://placehold.co/900x1100/111827/f8fafc?text=Foto+premium+del+coche" alt="Coche limpio después de un detailing a domicilio">
-
-                        <div class="floating-badge top">
-                            <span class="status-dot"></span>
-                            Servicio a domicilio
-                        </div>
-
-                        <div class="floating-panel">
-                            <p>Próxima limpieza</p>
-                            <strong>Granollers · 10:30</strong>
-                            <span>Interior + exterior</span>
-                        </div>
-                    </div>
-
-                    <div class="mini-comparison">
-                        <div>
-                            <span>Antes</span>
-                            <strong>Coche descuidado</strong>
-                        </div>
-                        <div>
-                            <span>Después</span>
-                            <strong>Acabado impecable</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOW IT WORKS -->
-        <section class="section how" id="how">
-            <div class="container">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Cómo funciona</p>
-                    <h2>Lo reservas en minutos. Nosotros hacemos el resto.</h2>
-                    <p>
-                        Pensado para gente que quiere tener el coche impecable sin perder una mañana
-                        en llevarlo, esperar y volver a recogerlo.
-                    </p>
-                </div>
-
-                <div class="steps-grid">
-                    <article class="step-card" data-reveal>
-                        <span class="step-number">01</span>
-                        <h3>Reserva online</h3>
-                        <p>Escoge el tipo de limpieza, día, hora y ubicación del coche desde Calendly.</p>
-                    </article>
-
-                    <article class="step-card" data-reveal>
-                        <span class="step-number">02</span>
-                        <h3>Vamos donde esté tu coche</h3>
-                        <p>Parking, garaje, casa, oficina o exterior. Tú nos indicas el punto y nos adaptamos.</p>
-                    </article>
-
-                    <article class="step-card" data-reveal>
-                        <span class="step-number">03</span>
-                        <h3>Lo dejamos listo</h3>
-                        <p>Mientras tú sigues con tu día, nosotros limpiamos el coche con mimo y detalle.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section class="section services section-soft" id="services">
-            <div class="container">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Servicios</p>
-                    <h2>Elige el nivel de limpieza que necesita tu coche.</h2>
-                    <p>
-                        No mostramos precios en la landing para que puedas elegir el servicio exacto desde la reserva.
-                    </p>
-                </div>
-
-                <div class="services-grid">
-                    <article class="service-card" data-reveal>
-                        <div class="service-icon">I</div>
-                        <h3>Limpieza interior</h3>
-                        <p>
-                            Aspirado, superficies interiores, plásticos, cristales interiores y repaso general
-                            para recuperar sensación de coche cuidado.
-                        </p>
-                        <ul>
-                            <li>Ideal si usas mucho el coche</li>
-                            <li>Perfecto para polvo, migas y uso diario</li>
-                            <li>Acabado limpio y agradable</li>
-                        </ul>
-                    </article>
-
-                    <article class="service-card featured" data-reveal>
-                        <div class="service-label">Más completo</div>
-                        <div class="service-icon">C</div>
-                        <h3>Detailing completo</h3>
-                        <p>
-                            Interior + exterior en una sola visita. La opción más cómoda para dejar el coche
-                            limpio por dentro y por fuera.
-                        </p>
-                        <ul>
-                            <li>Mejor experiencia global</li>
-                            <li>Exterior limpio y cuidado</li>
-                            <li>Interior listo para disfrutar</li>
-                        </ul>
-                    </article>
-
-                    <article class="service-card" data-reveal>
-                        <div class="service-icon">E</div>
-                        <h3>Limpieza exterior</h3>
-                        <p>
-                            Limpieza exterior cuidada para mejorar presencia, brillo y sensación visual
-                            sin que tengas que desplazarte.
-                        </p>
-                        <ul>
-                            <li>Carrocería, llantas y cristales</li>
-                            <li>Ideal antes de eventos o viajes</li>
-                            <li>Resultado visual inmediato</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- BENEFITS -->
-        <section class="section benefits" id="benefits">
-            <div class="container benefits-layout">
-                <div class="benefits-copy" data-reveal>
-                    <p class="eyebrow">Por qué Vengo</p>
-                    <h2>Detailing pensado para tu ritmo de vida.</h2>
-                    <p>
-                        Vengo Detailing nace para quitarte una tarea de encima:
-                        tener el coche limpio sin perder tiempo, sin desplazamientos y sin complicaciones.
-                    </p>
-
-                    <a href="https://calendly.com/vengo-detailing" class="btn btn-dark" target="_blank" rel="noopener">
-                        Ver disponibilidad
-                    </a>
-                </div>
-
-                <div class="benefits-grid">
-                    <article class="benefit-card" data-reveal>
-                        <span>01</span>
-                        <h3>A domicilio</h3>
-                        <p>Vamos a la ubicación que te vaya mejor.</p>
-                    </article>
-
-                    <article class="benefit-card" data-reveal>
-                        <span>02</span>
-                        <h3>Sin moverte</h3>
-                        <p>No tienes que llevar el coche ni esperar allí.</p>
-                    </article>
-
-                    <article class="benefit-card" data-reveal>
-                        <span>03</span>
-                        <h3>Flexible</h3>
-                        <p>Parking, garaje, casa, oficina o exterior.</p>
-                    </article>
-
-                    <article class="benefit-card" data-reveal>
-                        <span>04</span>
-                        <h3>Reserva rápida</h3>
-                        <p>Elige servicio, hora y ubicación online.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- BEFORE / AFTER -->
-        <section class="section before-after section-dark" id="before-after">
-            <div class="container">
-                <div class="section-heading light" data-reveal>
-                    <p class="eyebrow">Antes / después</p>
-                    <h2>El cambio se tiene que notar.</h2>
-                    <p>
-                        Arrastra la barra para comparar el antes y el después.
-                        Funciona con ratón y con el dedo en móvil.
-                    </p>
-                </div>
-
-                <div class="comparison-wrapper" data-reveal>
-                    <div class="comparison" data-comparison style="--position: 50%;" tabindex="0" aria-label="Comparador antes y después">
-                        <!-- CAMBIA ESTAS DOS IMÁGENES por fotos reales con el mismo encuadre -->
-                        <img class="comparison-img comparison-after" src="https://placehold.co/1200x800/e5e7eb/111827?text=DESPUES+-+coche+limpio" alt="Después del detailing, coche limpio">
-                        <img class="comparison-img comparison-before" src="https://placehold.co/1200x800/1f2937/f8fafc?text=ANTES+-+coche+sucio" alt="Antes del detailing, coche sucio">
-
-                        <span class="comparison-label before">Antes</span>
-                        <span class="comparison-label after">Después</span>
-
-                        <div class="comparison-line" aria-hidden="true"></div>
-                        <div class="comparison-handle" aria-hidden="true">
-                            <span></span>
-                        </div>
-                    </div>
-
-                    <p class="comparison-note">
-                        Consejo: cuando tengas fotos reales, usa una imagen “antes” y otra “después” hechas desde el mismo ángulo.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- TRUST -->
-        <section class="section trust" id="trust">
-            <div class="container trust-grid">
-                <div class="trust-card main-trust" data-reveal>
-                    <p class="eyebrow">Confianza</p>
-                    <h2>Cercano, puntual y cuidadoso con tu coche.</h2>
-                    <p>
-                        La idea es simple: un servicio cómodo, bien hecho y con trato humano.
-                        Si tienes dudas sobre tu ubicación, el tipo de limpieza o el estado del coche,
-                        escríbenos antes de reservar y te orientamos.
-                    </p>
-
-                    <div class="trust-actions">
-                        <a href="https://wa.me/34636825612" class="btn btn-primary" target="_blank" rel="noopener">
-                            Resolver dudas por WhatsApp
-                        </a>
-                    </div>
-                </div>
-
-                <div class="trust-list">
-                    <article data-reveal>
-                        <strong>Puntualidad</strong>
-                        <span>Respetamos la hora elegida y la ubicación indicada.</span>
-                    </article>
-
-                    <article data-reveal>
-                        <strong>Cuidado</strong>
-                        <span>Tratamos cada coche con atención, sin prisas y con criterio.</span>
-                    </article>
-
-                    <article data-reveal>
-                        <strong>Claridad</strong>
-                        <span>Si algo no encaja con tu caso, te lo diremos antes.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ZONE -->
-        <section class="section zone section-soft" id="zone">
-            <div class="container zone-card" data-reveal>
-                <div>
-                    <p class="eyebrow">Zona de servicio</p>
-                    <h2>Actualmente en Granollers y alrededores.</h2>
-                    <p>
-                        Si estás cerca y no sabes si llegamos a tu zona, escríbenos por WhatsApp
-                        y te confirmamos disponibilidad.
-                    </p>
-                </div>
-
-                <a href="https://wa.me/34636825612" class="btn btn-dark" target="_blank" rel="noopener">
-                    Consultar mi zona
-                </a>
-            </div>
-        </section>
-
-        <!-- FINAL CTA -->
-        <section class="final-cta section-dark" id="reserve">
-            <div class="container final-cta-inner" data-reveal>
-                <p class="eyebrow">Reserva online</p>
-                <h2>Deja tu coche impecable sin perder tiempo.</h2>
-                <p>
-                    Elige servicio, dinos dónde está el coche y nosotros nos encargamos.
-                </p>
-
-                <div class="hero-actions center">
-                    <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank" rel="noopener">
-                        Reserva tu limpieza
-                    </a>
-                    <a href="https://wa.me/34636825612" class="btn btn-secondary" target="_blank" rel="noopener">
-                        Pregunta por WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <a href="#hero" class="brand footer-brand">
-                    <span class="brand-mark">V</span>
-                    <span class="brand-text">
-                        <strong>Vengo</strong>
-                        <small>Detailing</small>
-                    </span>
-                </a>
-                <p>Detailing a domicilio en Granollers y alrededores.</p>
-            </div>
-
-            <div>
-                <h3>Servicios</h3>
-                <a href="#services">Interior</a>
-                <a href="#services">Exterior</a>
-                <a href="#services">Completo</a>
-            </div>
-
-            <div>
-                <h3>Contacto</h3>
-                <a href="https://wa.me/34636825612" target="_blank" rel="noopener">WhatsApp</a>
-                <a href="https://instagram.com/vengodetailing" target="_blank" rel="noopener">@vengodetailing</a>
-            </div>
+          <div class="hero-proof">
+            <div><strong>Sin desplazarte</strong><span>Vamos donde esté el coche</span></div>
+            <div><strong>Reserva rápida</strong><span>Elige día, hora y servicio</span></div>
+            <div><strong>Resultado cuidado</strong><span>Acabado limpio y profesional</span></div>
+          </div>
         </div>
 
-        <div class="container footer-bottom">
-            <p>© 2026 Vengo Detailing. Todos los derechos reservados.</p>
-            <p>Granollers · Mobile detailing</p>
-        </div>
-    </footer>
+        <div class="hero-visual" data-reveal>
+          <div class="hero-card">
+            <!-- Cambia esta URL por tu foto propia cuando tengas fotos reales de Vengo -->
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" alt="Coche limpio después de un detailing a domicilio" />
+            <div class="floating-badge"><span class="status-dot"></span>Servicio a domicilio</div>
+            <div class="floating-panel"><p>Próxima limpieza</p><strong>Granollers · 10:30</strong><span>Interior + exterior</span></div>
+          </div>
 
-    <script src="script.js"></script>
+          <div class="mini-comparison">
+            <div><span>Antes</span><strong>Coche descuidado</strong></div>
+            <div><span>Después</span><strong>Acabado impecable</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>Lo reservas en minutos. Nosotros hacemos el resto.</h2>
+          <p>Pensado para gente que quiere tener el coche impecable sin perder una mañana en llevarlo, esperar y volver a recogerlo.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card" data-reveal><span class="step-number">01</span><h3>Reserva online</h3><p>Escoge el tipo de limpieza, día, hora y ubicación del coche desde Calendly.</p></article>
+          <article class="step-card" data-reveal><span class="step-number">02</span><h3>Vamos donde esté tu coche</h3><p>Parking, garaje, casa, oficina o exterior. Tú nos indicas el punto y nos adaptamos.</p></article>
+          <article class="step-card" data-reveal><span class="step-number">03</span><h3>Lo dejamos listo</h3><p>Mientras tú sigues con tu día, nosotros limpiamos el coche con mimo y detalle.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services section-soft" id="services">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Servicios</p>
+          <h2>Elige el nivel de limpieza que necesita tu coche.</h2>
+          <p>No mostramos precios en la landing para que puedas elegir el servicio exacto desde la reserva.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-reveal><div class="service-icon">I</div><h3>Limpieza interior</h3><p>Aspirado, superficies interiores, plásticos, cristales interiores y repaso general para recuperar sensación de coche cuidado.</p><ul><li>Ideal si usas mucho el coche</li><li>Perfecto para polvo, migas y uso diario</li><li>Acabado limpio y agradable</li></ul></article>
+          <article class="service-card featured" data-reveal><div class="service-label">Más completo</div><div class="service-icon">C</div><h3>Detailing completo</h3><p>Interior + exterior en una sola visita. La opción más cómoda para dejar el coche limpio por dentro y por fuera.</p><ul><li>Mejor experiencia global</li><li>Exterior limpio y cuidado</li><li>Interior listo para disfrutar</li></ul></article>
+          <article class="service-card" data-reveal><div class="service-icon">E</div><h3>Limpieza exterior</h3><p>Limpieza exterior cuidada para mejorar presencia, brillo y sensación visual sin que tengas que desplazarte.</p><ul><li>Carrocería, llantas y cristales</li><li>Ideal antes de eventos o viajes</li><li>Resultado visual inmediato</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits" id="benefits">
+      <div class="container benefits-layout">
+        <div class="benefits-copy" data-reveal>
+          <p class="eyebrow">Por qué Vengo</p>
+          <h2>Detailing pensado para tu ritmo de vida.</h2>
+          <p>Vengo Detailing nace para quitarte una tarea de encima: tener el coche limpio sin perder tiempo, sin desplazamientos y sin complicaciones.</p>
+          <a href="https://calendly.com/vengo-detailing" class="btn btn-dark" target="_blank" rel="noopener">Ver disponibilidad</a>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card" data-reveal><span>01</span><h3>A domicilio</h3><p>Vamos a la ubicación que te vaya mejor.</p></article>
+          <article class="benefit-card" data-reveal><span>02</span><h3>Sin moverte</h3><p>No tienes que llevar el coche ni esperar allí.</p></article>
+          <article class="benefit-card" data-reveal><span>03</span><h3>Flexible</h3><p>Parking, garaje, casa, oficina o exterior.</p></article>
+          <article class="benefit-card" data-reveal><span>04</span><h3>Reserva rápida</h3><p>Elige servicio, hora y ubicación online.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section before-after section-dark" id="before-after">
+      <div class="container">
+        <div class="section-heading light" data-reveal>
+          <p class="eyebrow">Antes / después</p>
+          <h2>El cambio se tiene que notar.</h2>
+          <p>Arrastra la barra para comparar el antes y el después. Funciona con ratón y con el dedo en móvil.</p>
+        </div>
+
+        <div class="comparison-wrapper" data-reveal>
+          <div class="comparison" data-comparison style="--position: 50%;" tabindex="0" aria-label="Comparador antes y después">
+            <!-- Cambia estas URLs por fotos propias hechas desde el mismo ángulo -->
+            <img class="comparison-img comparison-after" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=85" alt="Después del detailing, coche limpio" />
+            <img class="comparison-img comparison-before" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1400&q=85" alt="Antes del detailing, coche antes de limpiar" />
+            <span class="comparison-label before">Antes</span>
+            <span class="comparison-label after">Después</span>
+            <div class="comparison-line" aria-hidden="true"></div>
+            <div class="comparison-handle" aria-hidden="true"><span></span></div>
+          </div>
+          <p class="comparison-note">Consejo: cuando tengas fotos reales, usa una imagen “antes” y otra “después” hechas desde el mismo ángulo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust" id="trust">
+      <div class="container trust-grid">
+        <div class="trust-card main-trust" data-reveal>
+          <p class="eyebrow">Confianza</p>
+          <h2>Cercano, puntual y cuidadoso con tu coche.</h2>
+          <p>La idea es simple: un servicio cómodo, bien hecho y con trato humano. Si tienes dudas sobre tu ubicación, el tipo de limpieza o el estado del coche, escríbenos antes de reservar y te orientamos.</p>
+          <div class="trust-actions"><a href="https://wa.me/34600000000" class="btn btn-primary" target="_blank" rel="noopener">Resolver dudas por WhatsApp</a></div>
+        </div>
+
+        <div class="trust-list">
+          <article data-reveal><strong>Puntualidad</strong><span>Respetamos la hora elegida y la ubicación indicada.</span></article>
+          <article data-reveal><strong>Cuidado</strong><span>Tratamos cada coche con atención, sin prisas y con criterio.</span></article>
+          <article data-reveal><strong>Claridad</strong><span>Si algo no encaja con tu caso, te lo diremos antes.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section zone section-soft" id="zone">
+      <div class="container zone-card" data-reveal>
+        <div><p class="eyebrow">Zona de servicio</p><h2>Actualmente en Granollers y alrededores.</h2><p>Si estás cerca y no sabes si llegamos a tu zona, escríbenos por WhatsApp y te confirmamos disponibilidad.</p></div>
+        <a href="https://wa.me/34600000000" class="btn btn-dark" target="_blank" rel="noopener">Consultar mi zona</a>
+      </div>
+    </section>
+
+    <section class="final-cta section-dark" id="reserve">
+      <div class="container final-cta-inner" data-reveal>
+        <p class="eyebrow">Reserva online</p>
+        <h2>Deja tu coche impecable sin perder tiempo.</h2>
+        <p>Elige servicio, dinos dónde está el coche y nosotros nos encargamos.</p>
+        <div class="hero-actions center">
+          <a href="https://calendly.com/vengo-detailing" class="btn btn-primary" target="_blank" rel="noopener">Reserva tu limpieza</a>
+          <a href="https://wa.me/34600000000" class="btn btn-secondary" target="_blank" rel="noopener">Pregunta por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a href="#hero" class="brand footer-brand"><span class="brand-mark">V</span><span class="brand-text"><strong>Vengo</strong><small>Detailing</small></span></a><p>Detailing a domicilio en Granollers y alrededores.</p></div>
+      <div><h3>Servicios</h3><a href="#services">Interior</a><a href="#services">Exterior</a><a href="#services">Completo</a></div>
+      <div><h3>Contacto</h3><a href="https://wa.me/34600000000" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/vengodetailing" target="_blank" rel="noopener">@vengodetailing</a></div>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 Vengo Detailing. Todos los derechos reservados.</p><p>Granollers · Mobile detailing</p></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
